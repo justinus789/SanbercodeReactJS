@@ -1,0 +1,95 @@
+html, body {
+    background-color: #FFF9F9;
+    height: 100%;
+    margin-top: 0px;
+}
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 0.25em;
+}
+
+a {
+    text-decoration: none;
+    color: #5264C7;
+}
+
+header img {
+    justify-content: start;
+}
+
+header nav {
+    justify-content: end;
+}
+
+header nav ul li{
+    display: inline;
+    padding-right: 2em;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#article-list{
+    width: 60%;
+    background-color: white;
+    padding: 1em;
+    box-shadow: 0.7px 0.8px 1.9px rgba(0, 0, 0, 0.022),
+                1.7px 2px 4.5px rgba(0, 0, 0, 0.032),
+                3.4px 4px 8.5px rgba(0, 0, 0, 0.04),
+                6.4px 7.6px 15.2px rgba(0, 0, 0, 0.048),
+                12.1px 14.3px 28.4px rgba(0, 0, 0, 0.058),
+                22px 26px 68px rgba(0, 0, 0, 0.08);
+}
+
+.article {
+    margin-top: 4em;
+    border-bottom: 1px solid gray;
+}
+
+footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #5264C7;
+    color: white;
+    text-align: center;
+}
+
+.box{
+    display: block;
+    position: relative;
+    border: 1px solid black;
+    top: 10px;
+}
+
+.box .box-title{
+    display: flex;
+    justify-content: center;
+}
+
+.box .box-content{
+    display: block;
+}
+
+.button {
+    margin-top: 2em;
+    text-decoration: none;
+    text-transform: lowercase;
+    color: black;
+    display: inline-block;
+    padding: 5px;
+    background-color: #EEEEEE;
+    border: 1px solid black;
+    border-radius: 3px;
+}

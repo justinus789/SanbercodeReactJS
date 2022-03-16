@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Register Akun Baru!</h1>
+    <h3>Isilah form dibawah ini</h3>
+    <form action="" method="POST">
+        <label for="fname">First Name :</label> <br><br>
+        <input type="text" id="fname" name="fname"> <br><br>
+
+        <label for="lname">Last Name :</label> <br><br>
+        <input type="text" id="lname" name="lname"> <br><br>
+
+        <label for="gender">Gender :</label> <br><br>
+        <input type="radio" name="gender" id="male" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other" value="Other">
+        <label for="other">Other</label> <br><br>
+
+        <label for="nationality">Nationality :</label> <br><br>
+        <select name="nationality" id="nationality">
+            <option value="Indonesian">Indonesian</option>
+            <option value="Singaporean">Singaporean</option>
+        </select> <br><br>
+
+        <label for="study">Sedang Fokus Belajar :</label> <br><br>
+        <select name="study" id="study">
+            <option value="Reactjs">Reactjs</option>
+            <option value="Vuejs">Vuejs</option>
+        </select> <br><br>
+
+        <label for="language">Language Spoken:</label><br><br>
+        <input type="checkbox" name="language1" id="language1" value="Male">
+        <label for="language1">Male</label>
+        <input type="checkbox" name="language2" id="language2" value="Female">
+        <label for="language2">Female</label>
+        <input type="checkbox" name="language3" id="language3" value="Other">
+        <label for="language3">Other</label> <br><br>
+
+        <label for="description">Deskripsi Diri Saya :</label><br><br>
+        <textarea name="description" id="description"></textarea> <br><br>
+
+        <input type="submit" value="register">
+
+    </form>
+</body>
+</html>
