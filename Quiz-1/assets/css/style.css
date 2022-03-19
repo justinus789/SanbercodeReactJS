@@ -1,0 +1,300 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins";
+    font-size: 22px;
+}
+
+/* Buatlah styling setiap section dibawah ini */
+
+.container {
+    /* border: 2px solid red; */
+    width: 780px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.container .container_hero {
+    margin-top: 30px;
+    background-color: #146356;
+    border-radius: 10px;
+    padding: 1.5em;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .container_hero h1 {
+    width: 65%;
+    justify-content: start;
+}
+
+.container .container_hero p {
+    font-size: 0.7em;
+    justify-content: end;
+    text-align: right;
+}
+
+.container .container_bottom{
+    margin-top: 10px;
+}
+
+.container .container_bottom p{
+    font-size: 0.8em;
+    margin-bottom: 40px;
+}
+
+.container .container_bottom p a button{
+    font-size: 0.8em;
+    margin-left: 10px;
+    background-color: white;
+    border: 1.5px solid grey;
+    border-radius: 3px;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.container .container_support {
+    text-align: center;
+    padding: 1em;
+}
+
+.container .container_support p {
+    font-size: 0.5em;
+}
+
+.container .container_support .logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .container_features_title {
+    margin-top: 70px;
+}
+
+.container .container_features_title h1{
+    padding-bottom: 5px;
+    border-bottom: 5px solid #073f36;
+    display: inline;
+}
+
+.container .container_features {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 50px 0px;
+    gap: 20px;
+}
+
+.container .container_features .container_features-card { 
+    padding: 1em;
+    text-align: center;
+    display: grid;
+}
+
+.container .container_features .container_features-card p{
+    margin-top: 10px;
+    font-size: 0.5em;
+    align-self: flex-end;
+}
+
+.container .container_pricing_title {
+    margin-top: 70px;
+}
+
+.container .container_pricing_title h1{
+    padding-bottom: 5px;
+    border-bottom: 5px solid #073f36;
+    display: inline;
+}
+
+.container .container_pricing {
+    border-radius: 2px;
+    padding: 1em;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #073f36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .container_pricing .container_pricing-card {
+    background-color: white;
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.container .container_pricing .container_pricing-card h1{
+    text-align: center;
+}
+
+.container .container_pricing .container_pricing-card small{
+    font-size: 0.55em;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.container .container_pricing .container_pricing-card ul{
+    margin-top: 10px;
+}
+
+.container .container_pricing .container_pricing-card ul li{
+    font-size: 0.55em;
+}
+
+/* Aturlah breakpoint dibawah ini menggunakan media queries agar responsive dibawah sini*/
+
+@media only screen and (max-width: 480px){
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        place-items: center;
+    }
+
+    .container .container_hero {
+        width: 80%;
+        margin-top: 30px;
+        background-color: #146356;
+        border-radius: 10px;
+        padding: 1.5em;
+        color: whitesmoke;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .container .container_hero h1 {
+        width: 100%;
+        justify-content: start;
+    }
+
+    .container .container_bottom{
+        place-self: start;
+        margin-left: 10px;
+    }
+
+    .container .container_bottom p a button{
+        font-size: 0.8em;
+        margin-left: 0px;
+        background-color: white;
+        border: 1.5px solid grey;
+        border-radius: 3px;
+        padding: 0px 10px;
+        cursor: pointer;
+    }
+
+    .container .container_support .logo{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container .container_support .logo img{
+        width: 100px;
+        margin: 20px 0px;
+    }
+
+    .container .container_features {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 50px 0px;
+        gap: 20px;
+    }
+
+    .container .container_pricing {
+        border-radius: 2px;
+        padding: 1em;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        background-color: #073f36;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 480px) and ( max-width: 780px ){
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        place-items: center;
+    }
+
+    .container .container_hero {
+        width: 80%;
+        margin-top: 30px;
+        background-color: #146356;
+        border-radius: 10px;
+        padding: 1.5em;
+        color: whitesmoke;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .container .container_hero h1 {
+        width: 100%;
+        justify-content: start;
+    }
+
+    .container .container_bottom{
+        place-self: start;
+        margin-left: 5%;
+    }
+
+    .container .container_bottom p a button{
+        font-size: 0.8em;
+        margin-left: 0px;
+        background-color: white;
+        border: 1.5px solid grey;
+        border-radius: 3px;
+        padding: 0px 10px;
+        cursor: pointer;
+    }
+
+    .container .container_support .logo{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container .container_support .logo img{
+        width: 100px;
+        margin: 20px 0px;
+    }
+
+    .container .container_features {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 50px 0px;
+        gap: 20px;
+    }
+
+    .container .container_pricing {
+        border-radius: 2px;
+        padding: 1em;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        background-color: #073f36;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
