@@ -70,8 +70,10 @@ let phone = {
  
  /* Tulis kode jawabannya di sini */
  let {name:phoneName, brand: phoneBrand, year, colors} = phone
+ let colorBlack = colors[2]
+ let colorBronze = colors[0]
  // kode di bawah ini jangan dirubah atau dihapus
- console.log(phoneBrand, phoneName, year, colors[2], colors[0]) 
+ console.log(phoneBrand, phoneName, year, colorBlack, colorBronze)
 
  // Soal 6
 let warna = ["biru", "merah", "kuning" , "hijau"]
