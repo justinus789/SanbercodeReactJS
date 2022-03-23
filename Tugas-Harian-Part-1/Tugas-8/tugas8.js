@@ -92,6 +92,9 @@ let buku = {
 
 /* Tulis kode jawabannya di sini */ 
 let {penulis, tahunTerbit} = dataBukuTambahan
+warna.forEach(element => {
+    buku.warnaSampul.push(element)
+})
 let bukuComplete = {...buku, penulis, tahunTerbit}
 console.log(bukuComplete)
 
