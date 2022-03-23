@@ -25,8 +25,14 @@ console.log(HasilvolumeBalok )
 
 // Soal 2
 const introduce = (...rest) => {
-    let [names, age, gender, job] = rest
-    return `Pak ${names} adalah seorang ${job} yang berusia ${age} tahun`
+    var [names, age, gender, job] = rest
+    var title;
+    if(gender === 'Laki-Laki') {
+        title = "Pak"
+    } else if(gender === 'Perempuan') {
+        title = "Bu"
+    }
+    return `${title} ${names} adalah seorang ${job} yang berusia ${age} tahun`
 }
  
 //kode di bawah ini jangan dirubah atau dihapus
