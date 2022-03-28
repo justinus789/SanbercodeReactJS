@@ -69,3 +69,50 @@
 .container .button:active {
   background-color: red;
 }
+
+/* Tugas 11 */
+.crud-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.crud-container h1{
+  margin: 30px 0;
+}
+
+.crud-container table {
+  border: 1px solid gray;
+  padding: 1em;
+  border-spacing: 0;
+  border-radius: 5px;
+}
+
+td,th {
+  text-align: start;
+  padding: 0.7em 1.5em;
+  border-bottom: 1px solid gray;
+}
+
+td button {
+  margin-right: 5px;
+}
+
+.form-buah {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em 12em;
+}
+
+.form-buah label{
+  font-weight: bold;
+}
+
+.form-buah button{
+  place-self: end;
+  grid-column: 2;
+}
