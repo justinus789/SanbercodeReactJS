@@ -1,7 +1,7 @@
 // import logo from './logo.png';
 import './App.css';
 // import Checkbox from './checkbox';
-import Tugas11 from './Tugas-11';
+import Tugas11 from './Tugas-11/Tugas-11';
 
 const App = () => {
   return (
