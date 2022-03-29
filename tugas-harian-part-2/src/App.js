@@ -1,7 +1,8 @@
 // import logo from './logo.png';
 import './App.css';
 // import Checkbox from './checkbox';
-import Tugas11 from './Tugas-11/Tugas-11';
+// import Tugas11 from './Tugas-11/Tugas-11';
+import Tugas12 from './Tugas-12/Tugas-12';
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
     //   </div>
     // </div>
     <>
-      <Tugas11/>
+      {/* <Tugas11/> */}
+      <Tugas12/>
     </>
   );
 }
