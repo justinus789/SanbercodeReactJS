@@ -2,7 +2,8 @@
 import './App.css';
 // import Checkbox from './checkbox';
 // import Tugas11 from './Tugas-11/Tugas-11';
-import Tugas12 from './Tugas-12/Tugas-12';
+// import Tugas12 from './Tugas-12/Tugas-12';
+import Mahasiswa from './Tugas-13/Mahasiswa';
 
 const App = () => {
   return (
@@ -21,7 +22,8 @@ const App = () => {
     // </div>
     <>
       {/* <Tugas11/> */}
-      <Tugas12/>
+      {/* <Tugas12/> */}
+      <Mahasiswa/>
     </>
   );
 }
