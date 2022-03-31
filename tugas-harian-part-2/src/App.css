@@ -79,10 +79,18 @@
 }
 
 .crud-container h1{
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
-.crud-container table {
+.nav-btn {
+  margin-top: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+table {
   border: 1px solid gray;
   padding: 1em;
   border-spacing: 0;
@@ -116,4 +124,72 @@ td button {
 .form-buah button{
   place-self: end;
   grid-column: 2;
+}
+
+/* Navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-bottom: 2px solid rgb(202, 202, 202);
+}
+
+.light-nav{
+  background-color: white;
+}
+
+.dark-nav{
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.light-nav a {
+  color: gray;
+}
+
+.dark-nav a {
+  color: white;
+}
+
+.light-nav a:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+.dark-nav a:hover {
+  background-color: #111;
+}
+
+/* Tugas 14 */
+.create-mahasiswa-btn {
+  place-self: start;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.create-mahasiswa-btn:hover {
+  background-color: #2a962e;
+}
+
+.create-mahasiswa-btn:active {
+  background-color: #4CAF50;
 }

@@ -1,12 +1,13 @@
-// import logo from './logo.png';
 import './App.css';
-// import Checkbox from './checkbox';
+// import Tugas10 from './Tugas-10/Tugas-10';
 // import Tugas11 from './Tugas-11/Tugas-11';
 // import Tugas12 from './Tugas-12/Tugas-12';
-import Mahasiswa from './Tugas-13/Mahasiswa';
+// import Mahasiswa from './Tugas-13/Mahasiswa';
+import Routes from './Tugas-14/Routes';
 
 const App = () => {
   return (
+    // Tugas 10
     // <div className="App">
     //   <div className='container'>
     //     <img src={logo} alt="" />
@@ -20,10 +21,13 @@ const App = () => {
     //     <button className='button'>SEND</button>
     //   </div>
     // </div>
+    
     <>
+      {/* <Tugas10/> */}
       {/* <Tugas11/> */}
       {/* <Tugas12/> */}
-      <Mahasiswa/>
+      {/* <Mahasiswa/> */}
+      <Routes/>
     </>
   );
 }
