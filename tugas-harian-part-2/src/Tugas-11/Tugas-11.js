@@ -90,7 +90,7 @@ const Tugas11 = () => {
     return (
       <div className='crud-container'>
         <h1>Daftar Harga Buah</h1>
-        <table>
+        <table id='table1'>
           <thead>
             <tr>
               <th>No</th>
@@ -105,7 +105,7 @@ const Tugas11 = () => {
             {
               buah.map((val, index) => {
                 return (
-                  <tr>
+                  <tr key={index}>
                     <td>{index + 1}</td>
                     <td>{val.nama}</td>
                     <td>{val.hargaTotal}</td>

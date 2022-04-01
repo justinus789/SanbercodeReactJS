@@ -62,7 +62,7 @@ const MahasiswaList = () => {
                         <Link className='create-mahasiswa-btn' to='/tugas14/create'>
                             Buat Data Nilai Mahasiswa Baru
                         </Link>
-                        <table>
+                        <table id='table1'>
                         <thead>
                             <tr>
                             <th>No</th>

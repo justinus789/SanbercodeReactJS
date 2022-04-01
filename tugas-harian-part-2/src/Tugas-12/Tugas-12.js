@@ -142,7 +142,7 @@ const Tugas12 = () => {
             {mahasiswa!== null && (
                 <div className='crud-container'>
                     <h1>Daftar Nilai Mahasiswa</h1>
-                    <table>
+                    <table id='table1'>
                     <thead>
                         <tr>
                         <th>No</th>

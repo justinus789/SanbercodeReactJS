@@ -1,9 +1,10 @@
 import './App.css';
+import Routes from './Tugas-15/Routes';
 // import Tugas10 from './Tugas-10/Tugas-10';
 // import Tugas11 from './Tugas-11/Tugas-11';
 // import Tugas12 from './Tugas-12/Tugas-12';
 // import Mahasiswa from './Tugas-13/Mahasiswa';
-import Routes from './Tugas-14/Routes';
+// import Routes from './Tugas-14/Routes';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
       {/* <Tugas11/> */}
       {/* <Tugas12/> */}
       {/* <Mahasiswa/> */}
+      {/* <Routes/> */}
       <Routes/>
     </>
   );

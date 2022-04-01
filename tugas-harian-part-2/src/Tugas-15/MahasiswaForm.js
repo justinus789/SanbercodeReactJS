@@ -2,9 +2,9 @@ import React, { useContext, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { MahasiswaContext } from "./MahasiswaContext";
 
-const MahasiswaForm = () => {
+const MahasiswaForm15 = () => {
     let history = useHistory()
-    const {inputMahasiswa,setInputMahasiswa,currentId,setCurrentId,functions,clearForm,setFetchStatus,fetchStatus} = useContext(MahasiswaContext)
+    const {inputMahasiswa,setInputMahasiswa,currentId,setCurrentId,functions,clearForm,setFetchStatus,fetchStatus,setAlert} = useContext(MahasiswaContext)
 
     const {addData,updateData} = functions
 
@@ -55,8 +55,16 @@ const MahasiswaForm = () => {
     
           if (currentId === null) {
               addData()
+              setAlert({
+                show: true,
+                type: 'created'
+            })
           } else {
               updateData()
+              setAlert({
+                show: true,
+                type: 'edited'
+            })
           }
   
           setInputMahasiswa(clearForm)
@@ -73,19 +81,19 @@ const MahasiswaForm = () => {
         <label>
             Nama:
         </label>
-        <input type="text" required name='name' value={inputMahasiswa.name} onChange={handleChange}/>
+        <input style={{border: '1px solid black'}} type="text" required name='name' value={inputMahasiswa.name} onChange={handleChange}/>
         <label>
             Mata Kuliah:
         </label>
-        <input type="text" required name='course' value={inputMahasiswa.course} onChange={handleChange}/>
+        <input style={{border: '1px solid black'}} type="text" required name='course' value={inputMahasiswa.course} onChange={handleChange}/>
         <label>
             Nilai:
         </label>
-        <input type="number" required min='0' max='100' name='score' value={inputMahasiswa.score} onChange={handleChange}/>
-        <button>submit</button>
+        <input style={{border: '1px solid black'}} type="number" required min='0' max='100' name='score' value={inputMahasiswa.score} onChange={handleChange}/>
+        <button style={{border: '1px solid black', padding :'0.5em'}}>submit</button>
         </form>
         </div>
     )
 }
 
-export default MahasiswaForm
+export default MahasiswaForm15

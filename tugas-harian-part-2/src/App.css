@@ -90,22 +90,22 @@
   cursor: pointer;
 }
 
-table {
+#table1 {
   border: 1px solid gray;
   padding: 1em;
   border-spacing: 0;
   border-radius: 5px;
 }
 
-td,th {
+/* #table1 td,th {
   text-align: start;
   padding: 0.7em 1.5em;
   border-bottom: 1px solid gray;
 }
 
-td button {
+#table1 td button {
   margin-right: 5px;
-}
+} */
 
 .form-buah {
   border: 1px solid gray;
@@ -192,4 +192,12 @@ li a {
 
 .create-mahasiswa-btn:active {
   background-color: #4CAF50;
+}
+
+/* Tugas 15 */
+.alert-left {
+  place-self: start;
+  position: fixed;
+  bottom: 60px;
+  left: 40px;
 }
