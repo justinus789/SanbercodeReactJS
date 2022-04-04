@@ -103,7 +103,7 @@ export const MahasiswaProvider15 = props => {
             setFetchStatus,
             alert,
             setAlert,
-            clearAlert
+            clearAlert,
         }}>
             {props.children}
         </MahasiswaContext.Provider>

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { MahasiswaContext } from "./MahasiswaContext";
 import logo from "../logo.png"
+import Cookies from 'js-cookie'
 
 const Nav = () => {
     const {navTheme,setNavTheme} = useContext(MahasiswaContext)
@@ -25,24 +26,44 @@ const Nav = () => {
                             <img className="h-12 w-15" src={logo} alt="logo"/>
                             <div className="hidden md:block">
                                 <div className="ml-10 flex items-baseline space-x-4">
-                                    <Link to='/' className={`text-gray-300  hover:text-gray-800 ${navTheme.toLowerCase()}:hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>
+                                    <Link to='/' className={`text-gray-300  hover:text-indigo-800 ${navTheme.toLowerCase()}:hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>
                                         Tugas 10
                                     </Link>
-                                    <Link to='/tugas11' className={`text-gray-300  hover:text-gray-800 ${navTheme.toLowerCase()}:hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>
+                                    <Link to='/tugas11' className={`text-gray-300  hover:text-indigo-800 ${navTheme.toLowerCase()}:hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>
                                         Tugas 11
                                     </Link>
-                                    <Link to='/tugas12' className={`text-gray-300  hover:text-gray-800 ${navTheme.toLowerCase()}:hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>
+                                    <Link to='/tugas12' className={`text-gray-300  hover:text-indigo-800 ${navTheme.toLowerCase()}:hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>
                                         Tugas 12
                                     </Link>
-                                    <Link to='/tugas13' className={`text-gray-300  hover:text-gray-800 ${navTheme.toLowerCase()}:hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>
+                                    <Link to='/tugas13' className={`text-gray-300  hover:text-indigo-800 ${navTheme.toLowerCase()}:hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>
                                         Tugas 13
                                     </Link>
-                                    <Link to='/tugas14' className={`text-gray-300  hover:text-gray-800 ${navTheme.toLowerCase()}:hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>
+                                    <Link to='/tugas14' className={`text-gray-300  hover:text-indigo-800 ${navTheme.toLowerCase()}:hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>
                                         Tugas 14
                                     </Link>
-                                    <Link to='/tugas15' className={`text-gray-300  hover:text-gray-800 ${navTheme.toLowerCase()}:hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>
+                                    <Link to='/tugas15' className={`text-gray-300  hover:text-indigo-800 ${navTheme.toLowerCase()}:hover:text-white px-3 py-2 rounded-md text-sm font-medium`}>
                                         Tugas 15
                                     </Link>
+                                    {!Cookies.get('token') && 
+                                        <>
+                                            <Link to='/register' className={`text-gray-300 hover:text-indigo-800 ${navTheme.toLowerCase()}:hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>
+                                                Register
+                                            </Link>
+                                            <Link to='/login' className={`text-gray-300 hover:text-indigo-800 ${navTheme.toLowerCase()}:hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>
+                                                Login
+                                            </Link>
+                                        </>
+                                        }
+                                        {Cookies.get('token') && 
+                                            <a 
+                                            className={`text-gray-300 cursor-pointer hover:text-indigo-800 ${navTheme.toLowerCase()}:hover:text-white block px-3 py-2 rounded-md text-base font-medium`}
+                                            onClick={()=> {
+                                                Cookies.remove('token')
+                                                window.location = '/login'
+                                            }}>
+                                                Logout
+                                            </a>
+                                        }
                                 </div>
                             </div>
                         </div>
@@ -65,24 +86,44 @@ const Nav = () => {
                 </div>
                 <div className="md:hidden">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        <Link to='/' className={`text-gray-300 hover:text-gray-800 ${navTheme.toLowerCase()}:hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>
+                        <Link to='/' className={`text-gray-300 hover:text-indigo-800 ${navTheme.toLowerCase()}:hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>
                             Tugas 10
                         </Link>
                         <Link to='/tugas11' className={`text-gray-300 ${navTheme.toLowerCase()}:text-white block px-3 py-2 rounded-md text-base font-medium`}>
                             Tugas 11
                         </Link>
-                        <Link to='/tugas12' className={`text-gray-300 hover:text-gray-800 ${navTheme.toLowerCase()}:hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>
+                        <Link to='/tugas12' className={`text-gray-300 hover:text-indigo-800 ${navTheme.toLowerCase()}:hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>
                             Tugas 12
                         </Link>
-                        <Link to='/tugas13' className={`text-gray-300 hover:text-gray-800 ${navTheme.toLowerCase()}:hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>
+                        <Link to='/tugas13' className={`text-gray-300 hover:text-indigo-800 ${navTheme.toLowerCase()}:hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>
                             Tugas 13
                         </Link>
-                        <Link to='/tugas14' className={`text-gray-300 hover:text-gray-800 ${navTheme.toLowerCase()}:hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>
+                        <Link to='/tugas14' className={`text-gray-300 hover:text-indigo-800 ${navTheme.toLowerCase()}:hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>
                             Tugas 14
                         </Link>
-                        <Link to='/tugas15' className={`text-gray-300 hover:text-gray-800 ${navTheme.toLowerCase()}:hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>
+                        <Link to='/tugas15' className={`text-gray-300 hover:text-indigo-800 ${navTheme.toLowerCase()}:hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>
                             Tugas 15
                         </Link>
+                        {!Cookies.get('token') && 
+                        <>
+                            <Link to='/register' className={`text-gray-300 hover:text-indigo-800 ${navTheme.toLowerCase()}:hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>
+                                Register
+                            </Link>
+                            <Link to='/login' className={`text-gray-300 hover:text-indigo-800 ${navTheme.toLowerCase()}:hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>
+                                Login
+                            </Link>
+                        </>
+                        }
+                        {Cookies.get('token') && 
+                            <a 
+                            className={`text-gray-300 cursor-pointer hover:text-indigo-800 ${navTheme.toLowerCase()}:hover:text-white block px-3 py-2 rounded-md text-base font-medium`}
+                            onClick={()=> {
+                                Cookies.remove('token')
+                                window.location = '/login'
+                            }}>
+                                Logout
+                            </a>
+                        }
                     </div>
                 </div>
             </nav>

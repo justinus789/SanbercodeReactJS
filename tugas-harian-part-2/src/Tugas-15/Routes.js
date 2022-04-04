@@ -15,6 +15,8 @@ import MahasiswaList15 from "./MahasiswaList";
 import MahasiswaList from "../Tugas-14/MahasiswaList";
 import Nav from "./Nav";
 import { MahasiswaProvider } from "../Tugas-14/MahasiswaContext";
+import Register from "../Auth/register";
+import Login from "../Auth/login";
 
 const Routes = () => {
 
@@ -25,6 +27,8 @@ const Routes = () => {
 
                 <Nav/>
                 <Switch>
+                    <Route path='/register' exact component={Register} />
+                    <Route path='/login' exact component={Login} />
                     <Route path='/' exact component={Tugas10} />
                     <Route path='/tugas11' exact component={Tugas11} />
                     <Route path='/tugas12' exact component={Tugas12} />
