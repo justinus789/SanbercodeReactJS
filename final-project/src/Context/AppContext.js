@@ -228,6 +228,7 @@ export const AppProvider = (props) => {
             
             history.push('/')
         }).catch(err => {
+            alert('email or password invalid')
             console.log(err)
         })
     }

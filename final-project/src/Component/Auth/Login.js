@@ -23,10 +23,7 @@ const Login = () => {
     }
 
     const checkInput = () => {
-        if(isNaN(inputLogin.password)) {
-            alert('password must be number')
-            return false
-        } else if(inputLogin.password.length < 8) {
+        if(inputLogin.password.length < 8) {
             alert('password minimum 8 digit')
             return false
         }
